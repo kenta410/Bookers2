@@ -1,0 +1,18 @@
+<% @books.each do |book| %>
+<div>
+  <%= link_to book_path(book.id) do %>
+    <%= image_tag book.get_image %>
+  <% end %>
+  <tr>
+    <%= f.file_field :image, accept: "image/*" %>
+  </tr>
+  <tr>
+	  <th>name</th>
+	  <th><%= f.text_find :name %></th>
+  </tr>
+  <tr>
+	  <th>introduction</th>
+	  <th><%= f.text_area :introduction %></th>
+  </tr>
+  <% end %>
+  

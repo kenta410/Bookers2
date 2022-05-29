@@ -1,0 +1,26 @@
+<h1>Books#new</h1>
+<p>Find me in app/views/books/new.html.erb</p>
+
+<div class='row'>
+  <a class="btn btn-outline-secondary btn-block edit_user_12084" href="/users//edit">
+    <i class="fas fa-user-cog"></i>
+  </a>
+</div>
+
+<form action="/books" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="iUDjGq-Y1y3MmnKSvdvaW4f6vZpv7SzTYUdnj1UEQ1a6s6idkWfuqZ_BtqwSWrFQRhLuMBO7IyRII-glKLVAcQ" autocomplete="off" />
+  <div class="form-group">
+    <label for="book_title">Title</label>
+    <input class="form-control book_title" type="text" name="book[title]" id="book_title" />
+  </div>
+  <div class="form-group">
+    <label for="book_opinion">Opinion</label>
+    <textarea class="form-control book_body" name="book[body]" id="book_body"></textarea>
+  </div>
+  <div class="form-group">
+    <input type="submit" name="commit" value="Create Book" class="btn btn-success" data-disable-with="Create Book" />
+  </div>
+</form>
+    <div class='col-md-8 offset-md-1'>
+      <h2>Books</h2>
+      <table class='table table-hover table-inverse'>
+    </div>
